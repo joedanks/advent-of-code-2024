@@ -27,4 +27,22 @@ class Day01Test {
 
         assertEquals(1666427, result);
     }
+
+    @Test
+    void partTwoShouldPassTestInput() {
+        var input = fileInput.readFile("Day01_testData.txt");
+
+        var result = day01.partTwo(input).block();
+
+        assertEquals(31, result);
+    }
+
+    @Test
+    void partTwoShouldPassRealInput() {
+        var input = fileInput.readFile("Day01_input.txt");
+
+        var result = day01.partTwo(input).block();
+
+        assertEquals(24316233, result);
+    }
 }
