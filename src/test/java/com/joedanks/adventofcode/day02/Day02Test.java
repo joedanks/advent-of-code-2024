@@ -34,7 +34,7 @@ class Day02Test {
 
         var result = code.partTwo(input).block();
 
-        assertEquals(31, result);
+        assertEquals(4, result);
     }
 
     @Test
@@ -43,6 +43,6 @@ class Day02Test {
 
         var result = code.partTwo(input).block();
 
-        assertEquals(24316233, result);
+        assertEquals(514, result);
     }
 }
